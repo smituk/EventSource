@@ -1,0 +1,3 @@
+Javascript Cross-browser EventSource object
+===================
+...
