@@ -56,7 +56,8 @@
             @ini_set('output_buffering', 'Off');
             @ini_set('zlib.output_compression', 0);
             @ini_set('implicit_flush', 1);
-            for ($lvl = 0; $lvl < ob_get_level(); $lvl++)
+            $levels = ob_get_level();
+            for($level = 0; $level < $levels; $level++)
             {
                 ob_end_flush();
             }
